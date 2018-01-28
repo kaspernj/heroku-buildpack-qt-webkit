@@ -79,9 +79,9 @@ freedom_patch_xvfb() {
 	topic "Configuring Xvfb for apt"
 
 	# patch Xvfb to use /app/.. paths instead of hardcoded wrong values
-	sed -i s:/usr/bin:/app/nib: "/app/.apt/usr/bin/xvfb"
+	# sed -i s:/usr/bin:/app/nib: "/app/.apt/usr/bin/Xvfb"
 	# create symlinks for Xvfb to use /app/.apt/usr/...
-	ln -s /app/.apt/usr/bin /app/nib
+	# ln -s /app/.apt/usr/bin /app/nib
 }
 
 install_system_deps
