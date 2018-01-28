@@ -72,6 +72,8 @@ configure_export_env() {
 	cat << EOF >$BUILD_DIR/.profile.d/001_qt.sh
 export PATH="\$HOME/$QT_BIN_DIR:\$PATH"
 export QT_QPA_PLATFORM_PLUGIN_PATH=\$HOME/.apt/usr/lib/x86_64-linux-gnu/qt5/plugins/
+export QTDIR=\$HOME/.apt/usr/lib/x86_64-linux-gnu/qt5/
+export SPEC=\$HOME/.apt/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64
 EOF
 }
 
